@@ -16,3 +16,17 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.content {
+  display: flex;
+}
+
+.side-bar {
+  background-color: $color-grey-dark-1;
+  height: 50rem;
+
+  flex: 0 0 18%; // will ocuppy 18% from content space
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
