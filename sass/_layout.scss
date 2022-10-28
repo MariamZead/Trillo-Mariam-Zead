@@ -1,0 +1,18 @@
+.container {
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  background-color: #fff;
+  box-shadow: $shadow-dark;
+}
+
+.header {
+  font-size: 1.4rem; // for the placeholder
+  height: 7rem; // for applying margin top
+  background-color: #fff;
+  border-bottom: $line;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
