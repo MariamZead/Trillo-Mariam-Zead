@@ -37,11 +37,20 @@ body {
 
 .side-bar {
   background-color: #333;
-  height: 50rem;
   flex: 0 0 18%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+
+.hotel-overview {
+  flex: 1; }
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  color: currentColor;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor; }
 
 .logo {
   height: 3.5rem;
@@ -144,3 +153,57 @@ body {
     z-index: 10; }
   .side-nav__icon {
     margin-right: 2rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__item {
+    overflow: hidden; }
+  .gallery__img {
+    display: block;
+    width: 100%;
+    transition: all .4s; }
+  .gallery__img:hover {
+    transform: scale(1.2); }
+
+.overview {
+  display: flex;
+  justify-content: space-between; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    list-style: none;
+    color: #eb2f64;
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+  .overview__star {
+    margin-right: .5rem; }
+  .overview__location {
+    font-size: 1.2rem;
+    color: #eb2f64;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5rem; }
+  .overview__icon {
+    padding-right: .7rem; }
+  .overview__rating {
+    color: #fff;
+    background-color: #eb2f64;
+    padding: 0 2.25rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .overview__avg-rate {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px; }
+  .overview__vote {
+    font-size: .8rem;
+    text-transform: uppercase; }

@@ -1,0 +1,60 @@
+.overview {
+  display: flex;
+  justify-content: space-between;
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &__stars {
+    list-style: none;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    margin-right: auto; // to ocuppy the entier available space
+  }
+
+  &__star {
+    margin-right: .5rem;
+  }
+
+
+  &__location {
+    font-size: 1.2rem;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5rem;
+  }
+
+  &__icon {
+    padding-right: .7rem;
+  }
+
+  &__rating {
+    color: #fff;
+    background-color: $color-primary;
+    padding: 0 2.25rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__avg-rate {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
+  }
+
+  &__vote {
+        font-size: .8rem;
+    text-transform: uppercase;
+  }
+}

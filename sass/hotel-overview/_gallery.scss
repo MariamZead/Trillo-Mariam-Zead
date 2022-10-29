@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+
+  &__item {
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    width: 100%; // taking 100% of parent element width 
+    transition: all .4s;
+  }
+
+  &__img:hover {
+    transform: scale(1.2);
+  }
+}
