@@ -49,6 +49,27 @@ body {
 .hotel-overview {
   flex: 1; }
 
+.details {
+  font-size: 1.4rem;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2; }
+
+.description {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem; }
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 .btn-inline {
   border: none;
   background-color: transparent;
@@ -173,6 +194,20 @@ body {
   .side-nav__icon {
     margin-right: 2rem; }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #f4f2f2;
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem; }
+
 .gallery {
   display: flex; }
   .gallery__item {
@@ -226,3 +261,36 @@ body {
   .overview__vote {
     font-size: .8rem;
     text-transform: uppercase; }
+
+.review {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  margin-right: 3.5rem;
+  transition: all 0.2s; }
+  .review__text {
+    margin-bottom: 2rem; }
+  .review__user {
+    display: flex;
+    justify-content: space-between; }
+  .review__user-photo {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%; }
+  .review__user-box {
+    display: flex;
+    flex-direction: column; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: #999; }
+  .review__rating {
+    color: #eb2f64;
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review:hover {
+    transform: scale(1.05); }
