@@ -60,8 +60,8 @@ body {
     border: none;
     padding: 0.7rem 2rem;
     border-radius: 100px;
-    width: 90%;
-    transition: all 0.2s;
+    width: 85%;
+    transition: all 0.3s;
     margin-right: -4rem; }
     .search__input:focus {
       outline: none;
