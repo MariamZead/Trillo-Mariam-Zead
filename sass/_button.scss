@@ -10,6 +10,8 @@
   & span {
     margin-left: 3px;
     transition: margin-left 0.2s;
+
+    
   }
 
   &:hover {
@@ -61,26 +63,37 @@
   overflow: hidden;
   cursor: pointer;
 
-  
-    // for repeated code
-    & > * {
-        display: inline-block;
-        height: 100%;
-        transition: all .2s;
-    }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.2rem;
+  }
+
+  // for repeated code
+  & > * {
+    display: inline-block;
+    height: 100%;
+    transition: all 0.2s;
+  }
 
   &__visible {
     padding: 2rem 7.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1.5rem 4.5rem;
+    }
   }
 
   &__invisible {
     padding: 2rem 0;
     width: 100%;
-    
+
     position: absolute;
     top: -100%;
     left: 0;
-    transition: all .2s;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1.5rem 0;
+    }
   }
 
   &:hover {

@@ -138,19 +138,28 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer; }
+  @media only screen and (max-width: 31.25em) {
+    .btn {
+      font-size: 1.2rem; } }
   .btn > * {
     display: inline-block;
     height: 100%;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .btn__visible {
     padding: 2rem 7.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .btn__visible {
+        padding: 1.5rem 4.5rem; } }
   .btn__invisible {
     padding: 2rem 0;
     width: 100%;
     position: absolute;
     top: -100%;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
+    @media only screen and (max-width: 31.25em) {
+      .btn__invisible {
+        padding: 1.5rem 0; } }
   .btn:hover {
     background-image: linear-gradient(to right, #ba265d, #ff3366); }
   .btn:hover .btn__visible {
