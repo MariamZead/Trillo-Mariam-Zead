@@ -6,8 +6,17 @@
 
   position: relative; // for styling the quotations
   overflow: hidden; // to hide quotaions outside the box
-  
+
   transition: all 0.2s;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 3rem;
+  }
 
   &::before {
     content: "\201C";
@@ -18,7 +27,7 @@
     font-size: 20rem;
     color: $color-grey-light-2;
     font-family: sans-serif;
-    z-index: 1; // to be under the text 
+    z-index: 1; // to be under the text
   }
 
   &__text {

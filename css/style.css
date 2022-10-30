@@ -5,6 +5,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -26,6 +29,11 @@ body {
   margin: 8rem auto;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      width: 100%;
+      max-width: 100%; } }
 
 .header {
   font-size: 1.4rem;
@@ -38,6 +46,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .side-bar {
   background-color: #333;
@@ -55,6 +66,12 @@ body {
   padding: 4.5rem;
   background-color: #faf9f9;
   border-bottom: 1px solid #f4f2f2; }
+  @media only screen and (max-width: 56.25em) {
+    .details {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .details {
+      flex-direction: column; } }
 
 .description {
   padding: 3rem;
@@ -62,12 +79,23 @@ body {
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   flex: 0 0 60%; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .user {
+      flex-direction: row; } }
 
 .btn-inline {
   border: none;
@@ -200,15 +228,32 @@ body {
   padding: 2.5rem;
   text-align: center;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .copyright {
+      display: none; } }
 
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .side-nav {
+      font-size: 1.2rem;
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -233,6 +278,13 @@ body {
     z-index: 10;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        padding: 1rem; } }
   .side-nav__icon {
     margin-right: 2rem; }
 
@@ -296,6 +348,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .overview__stars {
     list-style: none;
     color: #eb2f64;
@@ -303,16 +359,16 @@ body {
     align-items: center;
     margin-right: auto; }
   .overview__star {
-    margin-right: .5rem; }
+    margin-right: 0.5rem; }
   .overview__location {
     font-size: 1.2rem;
     color: #eb2f64;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: .5rem; }
+    margin-right: 0.5rem; }
   .overview__icon {
-    padding-right: .7rem; }
+    padding-right: 0.7rem; }
   .overview__rating {
     color: #fff;
     background-color: #eb2f64;
@@ -327,7 +383,7 @@ body {
     font-weight: 300;
     margin-bottom: -3px; }
   .overview__vote {
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-transform: uppercase; }
 
 .review {
@@ -338,6 +394,13 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.2s; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      margin-right: 3rem; } }
   .review::before {
     content: "\201C";
     position: absolute;
@@ -381,8 +444,17 @@ body {
 .booking {
   padding: 4rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .booking {
+      padding: 2.5rem 0; } }
+  @media only screen and (max-width: 31.25em) {
+    .booking {
+      padding: 2rem 0; } }
   .booking__alert {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .booking__alert {
+        font-size: 1.6rem; } }

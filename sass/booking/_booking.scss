@@ -2,10 +2,22 @@
   padding: 4rem 0;
   text-align: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 2rem 0;
+  }
+
   &__alert {
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.6rem;
+  }
   }
 }

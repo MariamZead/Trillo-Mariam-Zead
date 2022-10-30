@@ -3,11 +3,30 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative; // to control the position (before , after)
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }
+    }
+
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1; // to fill the container
     }
   }
 
@@ -32,8 +51,8 @@
   }
 
   &__item:active::before {
-        background-color: $color-primary-light;
-    }
+    background-color: $color-primary-light;
+  }
 
   &__link:link,
   &__link:visited {
@@ -43,9 +62,19 @@
     padding: 1.5rem 3rem;
     position: relative; // to be on the top of everything
     z-index: 10;
-    
+
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1rem;
+    }
+    
   }
 
   &__icon {
