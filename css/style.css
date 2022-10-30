@@ -97,6 +97,17 @@ body {
     .user {
       flex-direction: row; } }
 
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 .btn-inline {
   border: none;
   background-color: transparent;
@@ -116,16 +127,12 @@ body {
     outline: none;
     animation: scaling 0.6s infinite; }
 
-@keyframes scaling {
-  0% {
-    transform: scale(1);
-    box-shadow: none; }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
-  100% {
-    transform: scale(1);
-    box-shadow: none; } }
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-arrow p {
+    font-size: 1.5rem; }
 
 .btn {
   font-size: 1.7rem;
