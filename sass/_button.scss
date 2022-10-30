@@ -5,9 +5,19 @@
   font-size: inherit;
   border-bottom: 1px solid currentColor;
   cursor: pointer;
+  transition: all 0.2s;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
 
   &:hover {
     color: $color-primary-dark;
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -19,6 +29,7 @@
 @keyframes scaling {
   0% {
     transform: scale(1);
+    box-shadow: none;
   }
 
   50% {
@@ -28,5 +39,68 @@
 
   100% {
     transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+.btn {
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  border-radius: 100px;
+  border: none;
+
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  
+    // for repeated code
+    & > * {
+        display: inline-block;
+        height: 100%;
+        transition: all .2s;
+    }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    padding: 2rem 0;
+    width: 100%;
+    
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-dark,
+      $color-primary-light
+    );
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: scaling 0.6s infinite;
   }
 }
