@@ -24,7 +24,7 @@
 .side-bar {
   background-color: $color-grey-dark-1;
 
-  flex: 0 0 18%; // will ocuppy 18% from content space
+  flex: 0 0 18%; // will occupy 18% from content space
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,27 +36,24 @@
 
 .details {
   font-size: 1.4rem;
+  display: flex;
   padding: 4.5rem;
   background-color: $color-grey-light-1;
   border-bottom: $line;
 }
 
 .description {
-  padding: 2rem;
+  padding: 3rem;
+  margin-right: 4.5rem;
   background-color: #fff;
   box-shadow: $shadow-light;
 
-  flex: 0 0 60%;
-  margin-right: 4.5rem;
-
-  
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4rem;
+  flex: 0 0 60%; // will occupy 60% of the parent element
 }
 
 .user {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
